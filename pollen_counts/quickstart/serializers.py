@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
+from pollen_counts.quickstart.models import PollenCounts
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -13,3 +14,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         model = Group
         fields = ('url', 'name')
 
+class PollenCountSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = PollenCounts
+        fields = ('date', 'birch_count')

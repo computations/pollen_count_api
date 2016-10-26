@@ -17,3 +17,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+class PollenCountsViewSet(viewsets.ModelViewSet):
+    queryset = PollenCounts.objects.all().order_by('-date')
+    serializer_class = PollenCountSerializer
