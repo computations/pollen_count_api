@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from pollen_counts.quickstart.serializers import UserSerializer, GroupSerializer
+from pollen_counts.quickstart.serializers import UserSerializer, GroupSerializer, PollenCountSerializer
+from pollen_counts.quickstart.models import PollenCounts
 
 
 class UserViewSet(viewsets.ModelViewSet):

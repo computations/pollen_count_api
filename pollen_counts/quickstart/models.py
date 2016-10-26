@@ -2,7 +2,7 @@ from django.db import models
 
 class PollenCounts(models.Model):
 	datetime = models.DateTimeField()
-	location = models.Charfield(max_length=10)
+	location = models.CharField(max_length=10)
 	alder_count = models.FloatField()
 	willow_count = models.FloatField()
 	birch_count = models.FloatField()
