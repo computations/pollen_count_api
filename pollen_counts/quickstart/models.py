@@ -18,4 +18,4 @@ class PollenCounts(models.Model):
 	other2_count = models.FloatField()
 	total_pollen_count = models.FloatField()
 	mold_count = models.FloatField()
-	comments = models.TextField()
+	comments = models.TextField(null=True)
