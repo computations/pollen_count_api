@@ -8,7 +8,6 @@ __pycache__/
 
 *.sqlite3
 include/
-manage.py
 pip-selfcheck.json
 
 
