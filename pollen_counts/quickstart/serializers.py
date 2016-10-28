@@ -17,4 +17,4 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class PollenCountSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = PollenCounts
-        fields = ('datetime', 'birch_count')
+        fields = ('datetime', 'birch')
